@@ -40,8 +40,13 @@ ax.set_yticks(np.arange(len(geography)))
 ax.set_xticklabels(sector)
 ax.set_yticklabels(geography)
 
+
+# Etiquetar los ejes
+ax.set_xlabel("Regiones")
+ax.set_ylabel("Sectores")
+
 # Establecer el título del gráfico
-ax.set_title("Ingresos por país y por sector en milles de millones")
+ax.set_title("Ingresos por país y por sector en milles de")
 
 # Ajustar el diseño para que los elementos no se solapen
 fig.tight_layout()
