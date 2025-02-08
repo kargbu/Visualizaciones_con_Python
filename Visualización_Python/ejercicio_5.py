@@ -1,16 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Cargar el dataset
 data = pd.read_csv('/Users/kgb/Desktop/COURSERA/Visualización_Python/Visualización_Python/moka_data.csv')
 
-
-# Display DataFrame information
-data.info()
-
-# Show the first 5 rows
-display(data.head())
+# Imprimir información sobre el DataFrame
+print(data.info())
+print(data.head(5))
 
 # Contar las infecciones por estado
 zombi_por_estados = data['States'].value_counts()
